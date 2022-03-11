@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "products": [
+            {
+                "id": 1,
+                "timestamp": 1646950488693,
+                "title": "mac",
+                "description": "description of product",
+                "code": 34235624624,
+                "thumbnail": "https://cdn3.iconfinder.com/data/icons/vol-2/128/desktop-512.png",
+                "price": 400,
+                "stock": 100
+            },
+            {
+                "id": 1,
+                "timestamp": 1646950488693,
+                "title": "mac",
+                "description": "description of product",
+                "code": 34235624624,
+                "thumbnail": "https://cdn3.iconfinder.com/data/icons/vol-2/128/desktop-512.png",
+                "price": 400,
+                "stock": 100
+            }
+        ],
+        "currentTime": 1646959026107
+    },
+    {
+        "id": 3,
+        "products": [
+            {
+                "id": 3,
+                "timestamp": 1646958140750,
+                "title": "spider",
+                "description": "description of product",
+                "code": 52535246432,
+                "thumbnail": "https://cdn4.iconfinder.com/data/icons/halloween-01/128/Halloween_Spider-512.png",
+                "price": 25,
+                "stock": 65
+            },
+            {
+                "id": 3,
+                "timestamp": 1646958140750,
+                "title": "spider",
+                "description": "description of product",
+                "code": 52535246432,
+                "thumbnail": "https://cdn4.iconfinder.com/data/icons/halloween-01/128/Halloween_Spider-512.png",
+                "price": 25,
+                "stock": 65
+            }
+        ],
+        "timestamp": 1646959920066
+    }
+]
