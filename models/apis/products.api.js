@@ -21,7 +21,7 @@ class ProductAPI {
         products.push({ id: newId, ...product });
         try {
             await fs.writeFile(this.path, JSON.stringify(products, null, 4));
-            return newId;
+            return { productID: newId };
         } catch (error) { throw new Error(error) }
     }
     updateProduct = async (newProduct, id) => {
@@ -37,6 +37,7 @@ class ProductAPI {
     deleteProduct = async id => {
         const products = await this.getAll();
         const indexProduct = products.findIndex(p => p.id == id);
+        if (!products[indexProduct]) return { error: `producto ${id} no encontrado` }
         const deletedProduct = products.splice(indexProduct, 1);
         try {
             await fs.writeFile(this.path, JSON.stringify(products, null, 4));

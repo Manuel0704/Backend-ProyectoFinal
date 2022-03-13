@@ -7,7 +7,7 @@ const router = express.Router();
 router.use(express.json());
 router.use(express.urlencoded({ extended: true }));
 
-router.use('/products', productsRoutes);
-router.use('/carritos', carritosRoutes);
+router.use('/productos', productsRoutes);
+router.use('/carrito', carritosRoutes);
 
 module.exports = router;

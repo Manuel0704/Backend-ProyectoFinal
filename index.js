@@ -23,10 +23,6 @@ app.use((req, res, next) => {
     res.json({ error: -2, description: ` ruta ${req.url} metodo ${req.method} no implementado` });
 });
 
-io.on('connection', socket => {
-    console.log('USUARIO CONECTADO');
-});
-
 //INICIANDO SERVIDOR
 const myserver = httpServer.listen(PORT, () => {
     console.log(`SERVIDOR ACTIVO EN EL PUERTO ${PORT}`);
